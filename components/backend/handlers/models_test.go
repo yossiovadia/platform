@@ -421,7 +421,7 @@ var _ = Describe("Models Handler", Label(test_constants.LabelUnit, test_constant
 			var resp types.ListModelsResponse
 			err := json.Unmarshal(httpTestUtils.GetResponseRecorder().Body.Bytes(), &resp)
 			Expect(err).NotTo(HaveOccurred())
-			Expect(resp.Models).To(HaveLen(6))
+			Expect(resp.Models).To(HaveLen(7))
 		})
 	})
 
